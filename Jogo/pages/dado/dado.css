@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    margin-bottom: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.ctn {
+    margin-top: 0.625rem;
+    text-align: center;
+}
+
+#imgDado {
+    width: 200px;
+}
+
+#botaoSortear {
+    border: 0;
+    border-radius: 30px;
+    background: #d9d9D9;
+    color: #000000;
+    cursor: pointer;
+    width: 200px;
+    height: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+#botaoSortear:hover {
+    box-shadow: 1px 1px 5px rgb(0, 0, 0);
+}
+
+#sorteado {
+    background: #311b92;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+
+
+@keyframes mover {
+    0% {
+        transform: translateY(0px); 
+        transform: rotate(45deg);  
+        opacity: 0; 
+       }
+    50% {
+        transform:scale(50%); 
+    }
+    100% {
+        transform: translateY(-15px);  
+        transform: rotate(-45deg);     
+        opacity: 1; 
+    }
+}
+
+@keyframes aparecer {
+    to {
+        opacity: 0; 
+    }
+    from {
+        opacity: 1; 
+    }
+}
+
+.animar {
+    animation: mover 0.5s infinite alternate;
+}
+
+.aparecer {
+    animation: aparecer 1.5s ease-in;
+}

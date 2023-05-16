@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../dado/dado.css">
 
     <title>VLC STAR - DADO</title>
 </head>
+
 <body>
     <nav class="navbar">
         <li class="navbar links">
@@ -21,11 +24,20 @@
             <a class="links" href="../about/about.html">ABOUT</a>
         </li>
     </nav>
-    <section class="container dado">
-        <p id="numero sorteado" class="numero"></p>
-        <figure>
-            <img src="" alt="">
-        </figure>
-    </section>
+    <div class="main">
+        <section class="container dado">
+            <p id="sorteado" class="ctn"></p>
+            <figure>
+                <img src="../../img/dados/1.jpg" alt="dado numero 1" id="imgDado">
+            </figure>
+        </section>
+    </div>
+
+    <p class="ctn">
+        <button id="botaoSortear" >Rolar o Dado</button>
+    </p>
+
+    <script src="./dado.js"></script>
 </body>
+
 </html>
