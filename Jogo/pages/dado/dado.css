@@ -9,8 +9,6 @@ body {
     height: 100vh;
 }
 
-
-
 section {
     width: 100%;
     margin: 0 auto;
@@ -22,15 +20,11 @@ section {
     align-items: center;
 }
 
-h1 {
+.ctn {
+    margin-top: 50px;
     text-align: center;
-    font-size: 1.5rem;
 }
 
-.ctn {
-    margin-top: 0.625rem;
-    text-align: center;
-}
 
 #imgDado {
     width: 200px;
@@ -54,26 +48,50 @@ h1 {
 }
 
 #sorteado {
-    background: #311b92;
+    background: #08024A;
     color: #fff;
+    width: 50px;
+    height: 25px;
     padding: 5px 10px;
-    border-radius: 50%;
-    margin-bottom: 0.5rem;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+.cards {
+    background-color: #D9D9D9;
+    width: 210px;
+    height: 170px;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.powers {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.imagens {
+    width: 10vw;
+    height: 10vh;
 }
 
 
 @keyframes mover {
     0% {
         transform: translateY(0px); 
-        transform: rotate(45deg);  
+        transform: rotate(65deg);  
         opacity: 0; 
        }
     50% {
         transform:scale(50%); 
     }
     100% {
-        transform: translateY(-15px);  
-        transform: rotate(-45deg);     
+        transform: translateY(-25px);  
+        transform: rotate(-65deg);     
         opacity: 1; 
     }
 }

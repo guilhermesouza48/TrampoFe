@@ -18,7 +18,7 @@ botaoSortear.addEventListener('click', function(){
 
         imgDado.setAttribute('src', '../../img/dados/'+ numeroSorteado +'.jpg');
 
-        sorteado.textContent = '+' + numeroSorteado
+        sorteado.textContent = '+ ' + numeroSorteado
 
         botaoSortear.style.display = 'inline-block';
 
