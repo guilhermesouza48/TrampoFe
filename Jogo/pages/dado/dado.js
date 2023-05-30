@@ -1,35 +1,32 @@
-let numeroSorteado = 0
-let imgDado = document.querySelector('#imgDado');
-let botaoSortear = document.querySelector('#botaoSortear');
-let sorteado = document.querySelector('#sorteado');
+let numeroSorteado = 0;
+let imgDado = document.querySelector("#imgDado");
+let botaoSortear = document.querySelector("#botaoSortear");
+let sorteado = document.querySelector("#sorteado");
 
-botaoSortear.addEventListener('click', function(){
+botaoSortear.addEventListener("click", function () {
+  imgDado.classList.add("animar");
+  sorteado.classList.add("aparecer");
 
-    imgDado.classList.add('animar');
-    sorteado.classList.add('aparecer');
+  botaoSortear.getElementsByClassName.display = "none";
 
-    botaoSortear.getElementsByClassName.display = 'none';
+  setTimeout(function () {
+    numeroSorteado = getRandomInt(1, 6);
 
-    setTimeout(function(){
+    console.log(numeroSorteado);
 
-        numeroSorteado = getRandomInt(1,6)
+    imgDado.setAttribute("src", "../../img/dados/" + numeroSorteado + ".jpg");
 
-        console.log(numeroSorteado)
+    sorteado.textContent = "+ " + numeroSorteado;
 
-        imgDado.setAttribute('src', '../../img/dados/'+ numeroSorteado +'.jpg');
+    botaoSortear.style.display = "inline-block";
 
-        sorteado.textContent = '+ ' + numeroSorteado
-
-        botaoSortear.style.display = 'inline-block';
-
-        imgDado.classList.remove('animar')
-        sorteado.classList.remove('aparecer')
-    }, 1750)
-})
+    imgDado.classList.remove("animar");
+    sorteado.classList.remove("aparecer");
+  }, 1750);
+});
 
 function getRandomInt(min, max) {
-    min = Math.ceil(min)
-    max = Math.floor(max)
-    return Math.floor(Math.random() * (max - min + 1)) + min
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-
